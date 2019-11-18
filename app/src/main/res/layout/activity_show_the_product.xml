@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.sm.hyperfood2.ShowTheProduct">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:id="@+id/imgforshow"
+            android:src="@drawable/single_cart_image"
+            android:layout_gravity="center" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="كيوى  طازج"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:textColor="#ff00"
+            android:textStyle="bold"
+            android:id="@+id/txtquoi"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=""
+            android:id="@+id/txtvaluerate" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:theme="@style/RatingBar"
+            android:layout_gravity="center_horizontal"
+            android:numStars="5" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_alignParentRight="true"
+                android:id="@+id/oneforsalh"
+                android:textColor="#ff00"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="كيلو"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:id="@+id/kiloforsalh"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14,00"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/costforsalah"
+                android:textColor="#ff00"
+                android:paddingRight="25dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ريال"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/ryalforsalah"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="16dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الكمية"
+                android:paddingTop="5dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/countforsalah"
+                android:textStyle="bold"
+                />
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="+"
+                android:layout_alignParentRight="true"
+                android:id="@+id/btnmore"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:background="#5488cd"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="140dp" />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="5"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:id="@+id/btnView"
+                android:textStyle="bold"
+                android:textColor="#ff00"
+                android:background="@drawable/edittext_drawable"
+                android:layout_marginRight="200dp"
+
+
+                />
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="-"
+                android:id="@+id/btnminus"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_marginRight="260dp"
+                android:background="#5488cd"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="قم بتقيم المنتج"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/txtrate" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar2"
+            android:theme="@style/RatingBar"
+            android:layout_gravity="center_horizontal"
+            android:numStars="5" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="حفظ"
+            android:textStyle="bold"
+            android:onClick="RateValue"
+            android:background="@drawable/stroke_btn"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btnrate" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="أضف الى السلة"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:id="@+id/btnAddtosalah"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="@drawable/stroke_btn_red"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

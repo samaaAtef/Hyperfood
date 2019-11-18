@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.sm.hyperfood2.Section"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/add_cart_icona"
+            android:layout_gravity="left"
+            android:onClick="Increase1"
+            />
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:id="@+id/img1c"
+            android:onClick="Showproductquoi"
+            android:src="@drawable/single_cart_image"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="افندى طازج"
+            android:paddingRight="5dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/afandyc"
+            android:layout_marginLeft="60dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:id="@+id/onec"
+                android:textColor="#ff00ff"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="85dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="كيلو"
+                android:id="@+id/kiloc"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="60dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="25dp"
+                android:id="@+id/fourc"
+                android:textColor="#ff00ff"
+                android:paddingRight="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ريال"
+                android:id="@+id/ryalc"
+                android:layout_alignParentLeft="true"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+        </LinearLayout>

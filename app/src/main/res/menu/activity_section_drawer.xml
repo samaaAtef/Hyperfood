@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/home_icon"
+            android:title="الرئيسيه" />
+        <item
+            android:id="@+id/id_myaccont"
+            android:icon="@drawable/user_icon"
+            android:title="حسابي" />
+        <item
+            android:id="@+id/salahShopping"
+            android:icon="@drawable/cart_icon_"
+            android:title="سلة المشتريات" />
+        <item
+            android:id="@+id/SectionsMenu"
+            android:icon="@drawable/list_icon"
+            android:title="الأقسام" />
+        <item
+            android:id="@+id/exit"
+            android:icon="@drawable/logout_icon"
+            android:title="تسجيل خروج" />
+
+
+    </group>
+
+
+
+</menu>

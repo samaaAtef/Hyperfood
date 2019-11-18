@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg_splash"
+    android:orientation="vertical"
+    tools:context="com.example.sm.hyperfood2.Main2Activity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/logo_login"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="مرحبا بك فى متجرك هايبر فود تمتع"
+        android:id="@+id/txthello"
+        android:textSize="22dp"
+        android:paddingRight="16dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="بالتسوق الان"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:id="@+id/txthello2"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="التسجيل"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:onClick="btnRegister"
+        android:id="@+id/btnRegister"
+        android:background="#53a1ee"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp" />
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تخطى"
+        android:id="@+id/btnformain"
+        android:background="#f23b4d"
+        android:textColor="#fefafa"
+        android:textStyle="bold"
+        android:onClick="btn"
+        android:textSize="22dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp" />
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sm.hyperfood2.Section"
+    android:background="#f9f5f5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/image_cart"
+            android:id="@+id/imgforsalah"
+            android:layout_alignParentRight="true"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="افندى "
+                    android:layout_marginRight="100dp"
+                    android:id="@+id/afandyforsalh"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="طازج "
+                    android:id="@+id/TAZEGSForSalah"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/afandyforsalh"
+                    android:layout_toStartOf="@+id/afandyforsalh"
+                    android:layout_marginTop="5dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="100dp"
+                    android:id="@+id/kiloforsalh"
+                    android:textColor="#ff00ff"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="كيلو"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/kiloforsalh"
+                    android:layout_toStartOf="@+id/kiloforsalh"
+                    android:id="@+id/kilo3"
+
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14"
+                    android:layout_toLeftOf="@+id/kilo3"
+                    android:id="@+id/cost"
+                    android:textColor="#ff00ff"
+                    android:paddingRight="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ريال"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/cost"
+                    android:id="@+id/RYALS"
+
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout> <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="25dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/add_cart_icona"
+                android:paddingTop="5dp"
+                android:layout_toRightOf="@+id/imgMin"
+                android:id="@+id/imgAdd"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="25dp"
+
+                android:id="@+id/count"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imgMin"
+                android:paddingTop="5dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/m_cart_icon"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:src="@drawable/close_icon"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            />
+    </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Salahs"
+    tools:showIn="@layout/app_bar_salhas">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="40dp"
+        android:paddingBottom="10dp"
+        >
+
+        <EditText
+            android:layout_width="286dp"
+            android:layout_height="30dp"
+            android:id="@+id/editsearch"
+            android:background="@drawable/stroke_btn"
+            android:hint="بحث .."
+            android:paddingRight="20dp"
+            android:layout_weight="0.58" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:src="@drawable/search_icon"
+            android:onClick="BtnSearch"
+            android:background="@drawable/stroke_btn_red" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="السلة"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:gravity="right"
+                android:id="@+id/txtsalah"
+                android:layout_marginRight="10dp"
+                android:background="#d31f1f"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/recyclerforSalah">
+            </ListView>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="العوده للتسوق"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#37cdd7"
+                android:id="@+id/BtnBackShope" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="اتمام الشراء"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#74e554"
+                android:id="@+id/BtnCompleteBuy" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

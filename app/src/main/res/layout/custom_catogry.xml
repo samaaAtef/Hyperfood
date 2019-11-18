@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.sm.hyperfood2.Section"
+    android:background="#f9f5f5"
+    android:orientation="vertical">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="المواد الغذائيه"
+        android:id="@+id/btnmaoud"
+        android:background="@drawable/stroke_btn_red"
+        android:textColor="#ffffff" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listCatogry"
+        android:background="#ffffff" />
+</LinearLayout>

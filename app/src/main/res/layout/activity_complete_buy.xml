@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".Complete_buy">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/stroke_drawable"
+                android:layout_marginBottom="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="30dp">
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/point_icon"
+                        android:layout_marginTop="15dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  اختر عنوان التوصيل"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/selectadd"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#ff4081">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/map_address_icon"
+                        android:id="@+id/imgaddress"
+                        android:layout_alignParentRight="true"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:layout_toLeftOf="@+id/imgaddress"
+                        android:text="انشئ عنوان جديد للتوصيل"
+                        android:id="@+id/txtMap"
+                        android:textColor="#ffffff"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textSize="20sp"
+                        />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/add_address_icon"
+                        android:layout_alignParentLeft="true"
+                        />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="30dp">
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/point_icon"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="15dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:text="  اختر وقت التوصيل"
+                        android:id="@+id/selectTime"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#ff4081">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/imgclock"
+                        android:src="@drawable/clock_icon"
+                        android:layout_alignParentRight="true"
+                        />
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text="انشئ وقت للتوصيل"
+                        android:layout_toLeftOf="@+id/imgclock"
+                        android:id="@+id/btnTime"
+                        android:textColor="#ffffff"
+                        android:layout_marginRight="20dp"
+                        android:textSize="20sp"
+                        />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_height="40dp"
+                        android:src="@drawable/add_address_icon"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/stroke_drawable">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/point_icon"
+                        android:layout_marginTop="15dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="المجموع"
+                        android:layout_alignParentRight="true"
+                        android:textSize="20dp"
+                        android:layout_marginRight="15dp"
+                        android:textStyle="bold"
+                        android:id="@+id/txtsum"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:id="@+id/txtp"
+                        android:layout_toLeftOf="@+id/txtsum"
+                        android:layout_toStartOf="@+id/txtsum"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_marginRight="65dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="55"
+                        android:id="@+id/txtnum5"
+                        android:textSize="20dp"
+                        android:layout_toLeftOf="@+id/txtp"
+                        android:layout_toStartOf="@+id/txtp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="20dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ريال"
+                        android:textSize="20dp"
+                        android:layout_toLeftOf="@+id/txtnum5"
+                        android:layout_toStartOf="@+id/txtnum5"
+                        android:textStyle="bold"
+                        android:textColor="#ff000f"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp" />
+
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    >
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/point_icon"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="20dp" />
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="  سعر التوصيل"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:id="@+id/txtPrice"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_toLeftOf="@+id/txtPrice"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:layout_toLeftOf="@+id/txtPrice"
+                        android:textStyle="bold"
+                        android:id="@+id/txtnum10"
+                        android:textSize="20dp"
+                        android:layout_marginRight="30dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ريال"
+                        android:layout_toLeftOf="@+id/txtnum10"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#ff000f"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp" />
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/point_icon"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="20dp" />
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="  المجموع الكلى"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:id="@+id/txtsummall"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textSize="20dp"
+                        android:layout_toLeftOf="@+id/txtsummall"
+                        android:layout_toStartOf="@+id/txtsummall"
+                        android:textStyle="bold"
+                        android:layout_marginRight="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="65"
+                        android:layout_toLeftOf="@+id/txtsummall"
+                        android:layout_toStartOf="@+id/txtsummall"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:id="@+id/txtnum65"
+                        android:layout_marginRight="30dp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ريال"
+                        android:layout_toLeftOf="@+id/txtnum65"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#ff000f"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/stroke_drawable"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/point_icon"
+                        android:layout_marginTop="10dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  ملاحظة"
+                        android:id="@+id/txthint"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        />
+
+                </RelativeLayout>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_drawable"
+                    android:hint="مثال اتصل بي عند الوصول"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="top"
+                    android:paddingTop="5dp"
+
+                    />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="العودة للتسوق"
+                    android:id="@+id/btnshopComplete"
+                    android:textColor="#ffffff"
+                    android:background="#1ba3fe"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="تأكيد الطلب"
+                    android:id="@+id/btnsure"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#28db43"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

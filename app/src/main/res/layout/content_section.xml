@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sm.hyperfood2.Section"
+    tools:showIn="@layout/app_bar_section" android:background="#f9f5f5">
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <EditText
+            android:layout_width="286dp"
+            android:layout_height="30dp"
+            android:id="@+id/editsearch"
+            android:background="@drawable/stroke_btn"
+            android:hint="بحث .."
+            android:paddingRight="20dp"
+            android:layout_weight="0.58" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:src="@drawable/search_icon"
+            android:id="@+id/imgsearch"
+            android:onClick="BtnSearch"
+            android:background="@drawable/stroke_btn_red" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#ffffff"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="كل الأقسام"
+                android:layout_alignParentRight="true"
+                android:id="@+id/txtsections"
+                android:drawableRight="@drawable/red"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="المزيد..."
+                android:layout_alignParentLeft="true"
+                android:id="@+id/txtMore" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="خضروات وفواكهه"
+                android:id="@+id/btnmaoud"
+                android:background="@drawable/stroke_btn_red"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="المواد الغذائيه"
+                android:id="@+id/btnveg"
+                android:background="#fac94e"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="المشروبات"
+                android:id="@+id/btnmash"
+                android:background="#f662b8"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="المخبز"
+                android:id="@+id/btnmakhbos"
+                android:background="#1ab181"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:background="#ffffff"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="فواكه طازجة"
+
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:id="@+id/kind"
+                android:drawableRight="@drawable/red"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="المزيد..."
+                android:gravity="left"
+                android:id="@+id/txtmoresection"
+                android:layout_alignParentLeft="true"/>
+
+
+        </RelativeLayout>
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:id="@+id/list_section"
+
+            ></GridView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

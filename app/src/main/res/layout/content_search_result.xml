@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sm.hyperfood2.SearchResult"
+    android:background="#f9f5f5"
+    tools:showIn="@layout/app_bar_search_result">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            >
+
+            <EditText
+                android:layout_width="286dp"
+                android:layout_height="30dp"
+                android:id="@+id/editsearch"
+                android:background="@drawable/stroke_btn"
+                android:hint="بحث .."
+                android:paddingRight="20dp"
+                android:layout_weight="0.58" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:src="@drawable/search_icon"
+                android:id="@+id/imgsearch"
+                android:background="@drawable/stroke_btn_red" />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+
+            android:background="#d31f1f">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="نتائج البحث:  "
+                android:id="@+id/txtresultsearch"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="90dp"
+                android:text="(جبنة)"
+                android:id="@+id/txtgebna"
+                android:textColor="#ffffff"
+                android:textSize="19dp"
+                />
+
+        </RelativeLayout>
+        /*-------------------------------------------------------------*/
+
+
+        <GridView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listfor_result_search"
+            android:numColumns="3"
+            ></GridView>
+
+    </LinearLayout>
+
+</LinearLayout>
